@@ -14,3 +14,5 @@ C:\Users\gabri\Desktop\estudos_api\src\Api.Data\bin\Debug\net8.0\Domain.dll
 C:\Users\gabri\Desktop\estudos_api\src\Api.Data\bin\Debug\net8.0\Domain.pdb
 C:\Users\gabri\Desktop\estudos_api\src\Api.Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
 C:\Users\gabri\Desktop\estudos_api\src\Api.Data\obj\Debug\net8.0\Data.csproj.CopyComplete
+C:\Users\gabri\Desktop\estudos_api\src\Api.Data\bin\Debug\net8.0\Data.runtimeconfig.json
+C:\Users\gabri\Desktop\estudos_api\src\Api.Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
