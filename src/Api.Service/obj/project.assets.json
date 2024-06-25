@@ -2794,11 +2794,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+      "projectUniqueName": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+      "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\obj\\",
+      "outputPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2815,14 +2815,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj"
+            "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj"
             },
-            "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj"
+            "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }
