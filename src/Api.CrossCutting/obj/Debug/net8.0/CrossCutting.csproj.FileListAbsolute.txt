@@ -10,3 +10,11 @@ C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\obj\Debug\net8.0\CrossCu
 C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\obj\Debug\net8.0\refint\CrossCutting.dll
 C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\obj\Debug\net8.0\CrossCutting.pdb
 C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\obj\Debug\net8.0\ref\CrossCutting.dll
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\bin\Debug\net8.0\Data.dll
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\bin\Debug\net8.0\Domain.dll
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\bin\Debug\net8.0\Service.dll
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\bin\Debug\net8.0\Domain.pdb
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\bin\Debug\net8.0\Service.pdb
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\bin\Debug\net8.0\Data.pdb
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\obj\Debug\net8.0\CrossCutting.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\estudos_api\src\Api.CrossCutting\obj\Debug\net8.0\CrossCutting.csproj.CopyComplete

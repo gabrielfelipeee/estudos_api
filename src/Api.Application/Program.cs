@@ -1,5 +1,4 @@
-using Api.Domain.Entities;
-using Api.Domain.Interfaces.Services.User;
+using Api.CrossCutting.DependencyInjection;
 
 namespace Api.Application
 {
@@ -13,12 +12,7 @@ namespace Api.Application
             builder.Services.AddSwaggerGen();
             builder.Services.AddControllers();
 
-            builder.Services.AddScoped<IUserService, IUserService>();
-
-
-
-
-
+         ConfigureServices(builder.Services);
 
             var app = builder.Build();
 
@@ -28,11 +22,21 @@ namespace Api.Application
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-
+            
             app.UseAuthentication();
+
             app.UseAuthorization();
+
+            app.MapControllers();
+
             app.Run();
+        }
+        
+        private static void ConfigureServices(IServiceCollection services)
+        {
+            ConfigureService.ConfigureDependenciesService(services);
+            ConfigureRepository.ConfigureDependenciesRepository(services);
+          //  services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
     }
 }
