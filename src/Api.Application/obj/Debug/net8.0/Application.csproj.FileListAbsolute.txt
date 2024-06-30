@@ -82,6 +82,3 @@ c:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\CrossCut
 c:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\Data.pdb
 C:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
-C:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\gabri\Desktop\estudos_api\src\Api.Application\bin\Debug\net8.0\Newtonsoft.Json.dll
