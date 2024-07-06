@@ -12,5 +12,5 @@ namespace Api.CrossCutting.DependencyInjection
             serviceCollection.AddTransient<ILoginService, LoginService>();
 
         }
-    }
+    }   
 }

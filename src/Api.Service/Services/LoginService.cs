@@ -1,4 +1,4 @@
-using Api.Domain.Entities;
+using Api.Domain.Dtos;
 using Api.Domain.Interfaces.Services.User;
 using Api.Domain.Repository;
 
@@ -12,7 +12,7 @@ namespace Api.Service.Services
         {
             _userRepository = userRepository;
         }
-        public async Task<object> FindUserByLogin(UserEntity user)
+        public async Task<object> FindUserByLogin(LoginDto user)
         {
             try
             {
