@@ -1,4 +1,6 @@
 using Api.CrossCutting.DependencyInjection;
+using Api.Domain.Security;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
 namespace Api.Application
@@ -9,14 +11,42 @@ namespace Api.Application
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            ConfigureServices(builder.Services);
-
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddControllers();
 
+            ConfigureServices(builder.Services, builder.Configuration);
 
-            // Informaações da API
-            builder.Services.AddSwaggerGen(c =>
+            var app = builder.Build();
+
+            // Swagger só é habilitado em ambiente de desenvolvimento
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();
+        }
+        private static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+        {
+            ConfigureService.ConfigureDependenciesService(services);
+            ConfigureRepository.ConfigureDependenciesRepository(services);
+
+            var signingConfigurations = new SigningConfigurations();
+            services.AddSingleton(signingConfigurations);
+
+            var tokenConfigurations = new TokenConfigurations();
+            new ConfigureFromConfigurationOptions<TokenConfigurations>(
+                configuration.GetSection("TokenConfigurations"))
+                    .Configure(tokenConfigurations);
+            services.AddSingleton(tokenConfigurations);
+
+            services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
                 new OpenApiInfo
@@ -30,31 +60,9 @@ namespace Api.Application
                         Email = "gabrielfelipe0722@gmail.com",
                         Url = new Uri("https://github.com/gabrielfelipeee")
                     }
-                });
+                }
+                );
             });
-
-
-            var app = builder.Build();
-
-            // Swagger só é habilitado em ambiente de desenvolvimento
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-            app.MapControllers();
-
-            app.Run();
-        }
-        private static void ConfigureServices(IServiceCollection services)
-        {
-            ConfigureService.ConfigureDependenciesService(services);
-            ConfigureRepository.ConfigureDependenciesRepository(services);
         }
     }
 }
