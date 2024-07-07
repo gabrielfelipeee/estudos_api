@@ -2634,11 +2634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "projectName": "CrossCutting",
-      "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2655,8 +2655,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj"
+            "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj"
             },
             "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj": {
               "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj"

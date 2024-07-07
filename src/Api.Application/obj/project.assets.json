@@ -3185,8 +3185,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
             "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj": {
               "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj"

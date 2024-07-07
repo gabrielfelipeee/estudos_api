@@ -1,3 +1,4 @@
+using System.Security.Cryptography.Xml;
 using Api.CrossCutting.DependencyInjection;
 using Api.Domain.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,6 +13,8 @@ namespace Api.Application
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            ConfigureServices(builder.Services, builder.Configuration);
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddControllers();
@@ -30,10 +33,31 @@ namespace Api.Application
                         Email = "gabrielfelipe0722@gmail.com",
                         Url = new Uri("https://github.com/gabrielfelipeee")
                     }
-                }
-                );
+                });
+                
+                // Adicionar o botão de Authorize
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "Entre com o token Jwt",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                   {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                             {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            }
+                        }, new List<string>()
+                   }
+                });
             });
-            ConfigureServices(builder.Services, builder.Configuration);
+
 
             var app = builder.Build();
 
@@ -68,6 +92,8 @@ namespace Api.Application
                     .Configure(tokenConfigurations);
             services.AddSingleton(tokenConfigurations);
 
+
+            // Configuração da Autenticação
             services.AddAuthentication(authOptions =>
             {
                 // Define o esquema de autenticação padrão como JWT
@@ -78,19 +104,21 @@ namespace Api.Application
             }).AddJwtBearer(bearerOptions =>
             {
                 var paramsValidation = bearerOptions.TokenValidationParameters;
+
                 paramsValidation.IssuerSigningKey = signingConfigurations.Key;
                 paramsValidation.ValidAudience = tokenConfigurations.Audience;
                 paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
                 paramsValidation.ValidateIssuerSigningKey = true; // Verifica se a chave usada é válida
                 paramsValidation.ValidateLifetime = true; // Verifica se o token ainda está dentro do tempo  de validação
-                paramsValidation.ClockSkew = TimeSpan.Zero;
+                paramsValidation.ClockSkew = TimeSpan.Zero; // Não há margem de tolerância adicional
             });
 
+            // Configuração da Autorização
             services.AddAuthorization(auth =>
             {
-                auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
-                .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
-                .RequireAuthenticatedUser().Build());
+                auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder() // Define uma política chamada Bearer
+                .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme) // Especifica o esquema que a autenticação deve usar, nesse caso o JwtBearer
+                .RequireAuthenticatedUser().Build()); // Apenas usuários autenticados podem fazer requisições 
             });
 
         }
