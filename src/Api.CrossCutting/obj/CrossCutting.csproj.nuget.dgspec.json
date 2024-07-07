@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
+    "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+    "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\obj\\",
+        "outputPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,8 +34,8 @@
               "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj": {
                 "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj"
               },
-              "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {
-                "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj"
+              "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -217,14 +217,14 @@
         }
       }
     },
-    "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {
+    "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",

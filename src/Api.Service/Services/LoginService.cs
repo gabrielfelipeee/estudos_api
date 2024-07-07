@@ -6,7 +6,6 @@ using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
 using Api.Domain.Repository;
 using Api.Domain.Security;
-using Microsoft.Extensions.Configuration;
 
 using Microsoft.IdentityModel.Tokens;
 
@@ -17,16 +16,13 @@ namespace Api.Service.Services
         private IUserRepository _userRepository;
         private SigningConfigurations _signingConfigurations;
         private TokenConfigurations _tokenConfigurations;
-        private IConfiguration _configuration { get; }
         public LoginService(IUserRepository userRepository,
                             SigningConfigurations signingConfigurations,
-                            TokenConfigurations tokenConfigurations,
-                            IConfiguration configuration)
+                            TokenConfigurations tokenConfigurations)
         {
             _userRepository = userRepository;
             _signingConfigurations = signingConfigurations;
             _tokenConfigurations = tokenConfigurations;
-            _configuration = configuration;
         }
         public async Task<object> FindUserByLogin(LoginDto user)
         {
@@ -48,7 +44,7 @@ namespace Api.Service.Services
                     {
                         var identity = new ClaimsIdentity(
                             new GenericIdentity(user.Email),
-                            new[]
+                             new[]
                             {
                                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), // jti => Id do token
                                 new Claim(JwtRegisteredClaimNames.UniqueName, user.Email),
@@ -57,12 +53,16 @@ namespace Api.Service.Services
                         DateTime createDate = DateTime.UtcNow; // Data e hora atual
                         DateTime expirationDate = createDate + TimeSpan.FromSeconds(_tokenConfigurations.Seconds); // createDate + segundos da classe TokenConfigurations
 
-                        var handler = new JwtSecurityTokenHandler();
+                        var handler = new JwtSecurityTokenHandler(); // oferece os metodos necessários para criação do token
                         string token = CreateToken(identity, createDate, expirationDate, handler);
                         return SuccessObject(createDate, expirationDate, token, user);
                     }
                 }
-                return null;
+                return new
+                {
+                    authenticated = false,
+                    message = "Falha ao autenticar"
+                };
             }
             catch (Exception ex)
             {

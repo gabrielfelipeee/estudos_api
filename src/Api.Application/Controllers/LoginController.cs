@@ -1,10 +1,12 @@
 using System.Net;
 using Api.Domain.Dtos;
 using Api.Domain.Interfaces.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
+    [AllowAnonymous] // Só pode fazer login se o user estiver cadastrado no DB
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase

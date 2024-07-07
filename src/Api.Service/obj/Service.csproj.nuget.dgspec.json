@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {}
+    "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {}
   },
   "projects": {
     "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
@@ -146,14 +146,14 @@
         }
       }
     },
-    "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {
+    "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,7 @@
 using System.Security.Cryptography;
 using Microsoft.IdentityModel.Tokens;
 
+
 namespace Api.Domain.Security
 {
     public class SigningConfigurations
@@ -14,6 +15,7 @@ namespace Api.Domain.Security
                 Key = new RsaSecurityKey(provider.ExportParameters(true));
             }
 
+            // Especifica como o token será assinado, (tipo de algoritmo e chave)
             // Gera as credenciais de assinatura a partir da key gerada, usando o algoritmo RSA-SHA256
             SigningCredentials = new SigningCredentials(Key, SecurityAlgorithms.RsaSha256Signature);
         }
