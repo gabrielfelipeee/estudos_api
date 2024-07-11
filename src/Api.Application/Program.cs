@@ -25,7 +25,7 @@ namespace Api.Application
                 c.SwaggerDoc("v1",
                 new OpenApiInfo
                 {
-                    Title = "ASP.NET CORE 8 C# | API REST com arquitetura DDD",
+                    Title = "ASP.NET CORE 8 C# | API REST | Arquitetura em camadas e DDD",
                     Version = "v1",
                     Description = "API REST",
                     Contact = new OpenApiContact

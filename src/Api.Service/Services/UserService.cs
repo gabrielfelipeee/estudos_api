@@ -30,8 +30,10 @@ namespace Api.Service.Services
             {
                 var dto = new UserDto
                 {
+                    Id = entity.Id,
                     Name = entity.Name,
                     Email = entity.Email,
+                    CreateAt = entity.CreateAt ?? DateTime.MinValue
                 };
                 dtos.Add(dto);
             }
@@ -45,13 +47,15 @@ namespace Api.Service.Services
             /*
             var result = new UserDto
             {
+                Id = entity.Id,
                 Name = entity.Name,
-                Email = entity.Email
+                Email = entity.Email,
+                CreateAt = entity.CreateAt ?? DateTime.MinValue
             };
             */
             return userDto;
         }
-        public async Task<UserDtoCreateResult> Post(UserDto user)
+        public async Task<UserDtoCreateResult> Post(UserDtoCreate user)
         {
             var model = _mapper.Map<UserModel>(user);
             var entity = _mapper.Map<UserEntity>(model);
@@ -60,7 +64,7 @@ namespace Api.Service.Services
             var dto = _mapper.Map<UserDtoCreateResult>(result);
             return dto;
         }
-        public async Task<UserDtoUpdateResult> Put(UserDto user)
+        public async Task<UserDtoUpdateResult> Put(UserDtoUpdate user)
         {
             var model = _mapper.Map<UserModel>(user);
             var entity = _mapper.Map<UserEntity>(model);
