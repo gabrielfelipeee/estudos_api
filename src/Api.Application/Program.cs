@@ -1,6 +1,7 @@
-using System.Security.Cryptography.Xml;
 using Api.CrossCutting.DependencyInjection;
+using Api.CrossCutting.Mappings;
 using Api.Domain.Security;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
@@ -34,7 +35,7 @@ namespace Api.Application
                         Url = new Uri("https://github.com/gabrielfelipeee")
                     }
                 });
-                
+
                 // Adicionar o botão de Authorize
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -121,6 +122,16 @@ namespace Api.Application
                 .RequireAuthenticatedUser().Build()); // Apenas usuários autenticados podem fazer requisições 
             });
 
+
+            // Configurações  autoMapper
+            var config = new AutoMapper.MapperConfiguration(config =>
+            {
+                config.AddProfile(new DtoToModelProfile());
+                config.AddProfile(new EntityToDtoProfile());
+                config.AddProfile(new ModelToEntityProfile());
+            });
+            IMapper mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
         }
     }
 }

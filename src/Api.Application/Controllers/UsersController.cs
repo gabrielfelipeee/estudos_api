@@ -1,4 +1,6 @@
 using System.Net;
+using Api.Domain.Dtos;
+using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Authorization;
@@ -25,7 +27,7 @@ namespace Api.Application.Controllers
 
             try
             {
-                IEnumerable<UserEntity> users = await _userService.GetAll();
+                IEnumerable<UserDto> users = await _userService.GetAll();
                 return Ok(await _userService.GetAll());
             }
             catch (ArgumentException e) // ArgumentException -> Erro de controller
@@ -53,12 +55,12 @@ namespace Api.Application.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromBody] UserDto user)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             try
             {
-                UserEntity result = await _userService.Post(user);
+                UserDtoCreateResult result = await _userService.Post(user);
                 if (result != null)
                 {
                     // 201 -> Created, indica que requisição foi bem sucedida e que um novo recurso foi criado.
@@ -74,12 +76,12 @@ namespace Api.Application.Controllers
 
         [Authorize]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
+        public async Task<ActionResult> Put([FromBody] UserDto user)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             try
             {
-                UserEntity result = await _userService.Put(user);
+                UserDtoUpdateResult result = await _userService.Put(user);
 
                 if (result == null) return BadRequest();
 

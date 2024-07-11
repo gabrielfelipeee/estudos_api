@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qL/owf7mhTMRsYQ4C6lBRDrhI1feDDOydt1k/5r3ruNRoIhsWRIXkAMmoxQeCELs1D1FhqqvyoMNqGHOusc+6A==",
+  "dgSpecHash": "GNBOa+V45OuONZt3BZLt8CMgVHHn8YlyBvY0kat+kbAbXelbw6q0zS0E2OcUuSyjkkEQ/VAbpKQLZAAPdOSHjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
+  "projectFilePath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
