@@ -2530,8 +2530,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj"
+            "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Data\\Data.csproj"
             },
             "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj": {
               "projectPath": "c:\\Users\\gabri\\Desktop\\estudos_api\\src\\Api.Domain\\Domain.csproj"

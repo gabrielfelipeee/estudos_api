@@ -43,7 +43,9 @@ namespace Api.Service.Services
         public async Task<UserDto> GetById(Guid id)
         {
             var entity = await _repository.SelectByIdAsync(id); // UserEntity
-            var userDto = _mapper.Map<UserDto>(entity); // Mapeia UserEntity para UserDto
+
+            // Caso o usuário seja nulo, cria um novo UserDto vazio
+            var userDto = _mapper.Map<UserDto>(entity) ?? new UserDto(); 
             /*
             var result = new UserDto
             {

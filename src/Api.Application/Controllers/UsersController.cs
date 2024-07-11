@@ -27,7 +27,7 @@ namespace Api.Application.Controllers
             try
             {
                 IEnumerable<UserDto> users = await _userService.GetAll();
-                return Ok(await _userService.GetAll());
+                return Ok(users);
             }
             catch (ArgumentException e) // ArgumentException -> Erro de controller
             {
@@ -44,7 +44,8 @@ namespace Api.Application.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
             try
             {
-                return Ok(await _userService.GetById(id));
+                UserDto user = await _userService.GetById(id);
+                return Ok(user);
             }
             catch (ArgumentException e)
             {
@@ -62,8 +63,13 @@ namespace Api.Application.Controllers
                 UserDtoCreateResult result = await _userService.Post(user);
                 if (result != null)
                 {
+                    
+                    // Cria uma URI baseada na rota GET "GetById" + o parâmetro id
+                    // Uri nesse vaso seria -> 'api/Users/id'
+                    var location = new Uri(Url.Link("GetById", new { id = result.Id }));
+
                     // 201 -> Created, indica que requisição foi bem sucedida e que um novo recurso foi criado.
-                    return Created(new Uri(Url.Link("GetById", new { id = result.Id })), result); // Retorna o link e o objeto de result
+                    return Created(location, result); // Retorna a Uri e o user
                 }
                 return BadRequest();
             }
@@ -99,7 +105,8 @@ namespace Api.Application.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
             try
             {
-                return Ok(await _userService.Delete(id));
+                var result = await _userService.Delete(id);
+                return Ok(result);
             }
             catch (ArgumentException e)
             {
