@@ -31,7 +31,7 @@ namespace Api.Service.Services
                 var baseUser = new UserEntity();
                 if (user != null && !string.IsNullOrWhiteSpace(user.Email))
                 {
-                    baseUser = await _userRepository.FindByLogin(user.Email); // baseUser receb o usuário com o mesmo email de loginDto
+                    baseUser = await _userRepository.FindByLogin(user.Email); // baseUser recebe o usuário com o mesmo email de loginDto
                     if (baseUser == null)
                     {
                         return new

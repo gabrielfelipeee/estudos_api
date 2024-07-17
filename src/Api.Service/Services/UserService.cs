@@ -1,3 +1,4 @@
+using System.Net;
 using Api.Domain.Dtos;
 using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
@@ -45,7 +46,7 @@ namespace Api.Service.Services
             var entity = await _repository.SelectByIdAsync(id); // UserEntity
 
             // Caso o usuário seja nulo, cria um novo UserDto vazio
-            var userDto = _mapper.Map<UserDto>(entity) ?? new UserDto(); 
+            var userDto = _mapper.Map<UserDto>(entity) ?? new UserDto();
             /*
             var result = new UserDto
             {

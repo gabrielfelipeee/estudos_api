@@ -1,18 +1,54 @@
-C:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Service.deps.json
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Service.dll
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Service.pdb
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Data.dll
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Domain.dll
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Domain.pdb
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\bin\Debug\net8.0\Data.pdb
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.sourcelink.json
-C:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.csproj.CopyComplete
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.dll
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\refint\Service.dll
-c:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\Service.pdb
-C:\Users\gabri\Desktop\estudos_api\src\Api.Service\obj\Debug\net8.0\ref\Service.dll
+C:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.deps.json
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.dll
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.pdb
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Data.dll
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Domain.dll
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Domain.pdb
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Data.pdb
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.AssemblyReference.cache
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.GeneratedMSBuildEditorConfig.editorconfig
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.AssemblyInfoInputs.cache
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.AssemblyInfo.cs
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.CoreCompileInputs.cache
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.sourcelink.json
+C:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.CopyComplete
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.dll
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/refint/Service.dll
+c:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.pdb
+C:/Users/gabri/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/ref/Service.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.deps.json
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.pdb
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Data.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Domain.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Domain.pdb
+/home/gabriel/Desktop/estudos_api/src/Api.Service/bin/Debug/net8.0/Data.pdb
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.AssemblyReference.cache
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.AssemblyInfoInputs.cache
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.AssemblyInfo.cs
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.CoreCompileInputs.cache
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.sourcelink.json
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/refint/Service.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.pdb
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/ref/Service.dll
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.deps.json
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.dll
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Service.pdb
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Data.dll
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Domain.dll
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Domain.pdb
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/bin/Debug/net8.0/Data.pdb
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.AssemblyReference.cache
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.AssemblyInfoInputs.cache
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.AssemblyInfo.cs
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.CoreCompileInputs.cache
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.sourcelink.json
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.CopyComplete
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.dll
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/refint/Service.dll
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.pdb
+/home/gabriel/Área de trabalho/estudos_api/src/Api.Service/obj/Debug/net8.0/ref/Service.dll
+/home/gabriel/Desktop/estudos_api/src/Api.Service/obj/Debug/net8.0/Service.csproj.CopyComplete

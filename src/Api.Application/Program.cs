@@ -1,9 +1,11 @@
 using Api.CrossCutting.DependencyInjection;
 using Api.CrossCutting.Mappings;
+using Api.Data.Context;
 using Api.Domain.Security;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
@@ -60,6 +62,18 @@ namespace Api.Application
             });
 
 
+            // Cors 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("localhost",
+                    policy => policy
+                        .WithOrigins("*")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        );
+            });
+
+
             var app = builder.Build();
 
             // Swagger só é habilitado em ambiente de desenvolvimento
@@ -69,10 +83,27 @@ namespace Api.Application
                 app.UseSwaggerUI();
             }
 
+            // Aplica o middleware de CORS
+            app.UseCors("localhost");
+
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
+
+            // Configurando a aplicação para atualizar o banco automáticamente ->> dotnet ef database update
+            /*
+            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower())
+            {
+                using (var service = app.Services.CreateScope())
+                {
+                    using (var context = service.ServiceProvider.GetService<MyContext>())
+                    {
+                        context.Database.Migrate();
+                    }
+                }
+            }
+            */
 
             app.Run();
         }

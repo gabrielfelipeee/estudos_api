@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
-    [Authorize("Bearer")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -53,7 +52,7 @@ namespace Api.Application.Controllers
             }
         }
 
-        [Authorize]
+
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
@@ -63,7 +62,7 @@ namespace Api.Application.Controllers
                 UserDtoCreateResult result = await _userService.Post(user);
                 if (result != null)
                 {
-                    
+
                     // Cria uma URI baseada na rota GET "GetById" + o parâmetro id
                     // Uri nesse vaso seria -> 'api/Users/id'
                     var location = new Uri(Url.Link("GetById", new { id = result.Id }));
